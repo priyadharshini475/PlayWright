@@ -8,7 +8,7 @@ let apiUtilObj;
 let createdOrderIds;
 test.beforeAll("API Login Test", async () => {
   apiContext = await request.newContext();
-  apiUtilObj = await new APIUtility(apiContext);
+   apiUtilObj = await new APIUtility(apiContext);
   sessionId = await apiUtilObj.getToken();
   console.log(sessionId);
 
